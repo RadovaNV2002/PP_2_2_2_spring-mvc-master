@@ -1,4 +1,4 @@
-package web.Model;
+package web.model;
 
 import java.util.Objects;
 
