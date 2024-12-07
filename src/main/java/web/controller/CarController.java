@@ -20,7 +20,7 @@ public class CarController {
     }
 
     @GetMapping()
-    public String carsPage(@RequestParam(value = "count", required = false) Integer count, ModelMap model) {
+    public String printCars(@RequestParam(value = "count", required = false) Integer count, ModelMap model) {
         if (count != null) {
             model.addAttribute("cars", carService.getCars(count));
         } else {
